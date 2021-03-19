@@ -1,13 +1,76 @@
 :root {
   --primary-text-color: #757575;
-  --h-color: #212121;
+  --secondary-color-text: #212121;
   --primary-white-color: #ffffff;
+  --logo-black-color: #000000;
   --accent-color: #2196f3;
-  --secondary-color-text: rgba(255, 255, 255, 0.6);
+  --accent-color-text: rgba(255, 255, 255, 0.6);
 }
-
 /*цвет основного текста --> color: #757575; */
-/*цвет заголовков --> color: #212121; */
+/*цвет вторичного текста --> color: #212121; */
 /*белый --> #FFFFFF */
 /*акцент --> color: #2196F3; */
-/*вторичный цвет текста color: rgba(255, 255, 255, 0.6); */
+/*акцентный цвет текста color: rgba(255, 255, 255, 0.6); */
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+/* HEADER */
+.accent {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--logo-black-color);
+}
+.link {
+  text-decoration: none;
+}
+.navigation .link {
+  color: var(--secondary-color-text);
+}
+.navigation .link:hover,
+.navigation .link:focus {
+  color: var(--accent-color);
+}
+.adds .link {
+  color: inherit;
+}
+.adds .link:hover,
+.adds .link:focus {
+  color: var(--accent-color);
+}
+/* /HEADER */
+
+/* MAIN */
+
+/* Временный bg, т.к. заголовок сливается с фоном */
+.dummy-bg {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--primary-white-color);
+}
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.h-style {
+  color: var(--secondary-color-text);
+}
+/* /MAIN */
+
+/* FOOTER */
+.footer-adds-color {
+  color: var(--primary-white-color);
+}
+.footer .link {
+  color: var(--accent-color-text);
+}
+.footer > .logo {
+  color: var(--primary-white-color);
+}
+/* /FOOTER */
