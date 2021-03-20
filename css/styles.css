@@ -5,6 +5,8 @@
   --logo-black-color: #000000;
   --accent-color: #2196f3;
   --accent-color-text: rgba(255, 255, 255, 0.6);
+  --button-grey-color: #f5f4fa;
+  --dummy-bg-color: #2f303a;
 }
 /*цвет основного текста --> color: #757575; */
 /*цвет вторичного текста --> color: #212121; */
@@ -49,6 +51,9 @@ body {
 .navigation .link:focus {
   color: var(--accent-color);
 }
+.navigation .current {
+  color: var(--accent-color);
+}
 .adds .link {
   color: inherit;
 
@@ -66,7 +71,7 @@ body {
 
 /* Временный bg, т.к. заголовок сливается с фоном */
 .dummy-bg {
-  background-color: #2f303a;
+  background-color: var(--dummy-bg-color);
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -154,7 +159,7 @@ body {
 }
 .filter .button {
   color: var(--secondary-color-text);
-  background-color: #f5f4fa;
+  background-color: var(--button-grey-color);
 
   font-family: inherit;
   font-weight: 500;
