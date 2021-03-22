@@ -114,6 +114,9 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+.team {
+  background-color: var(--button-grey-color);
+}
 .team .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -186,3 +189,10 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+/* /PORTFOLIO */
+
+/* HIDDEN HEADER */
+.h-hidden {
+  display: none;
+}
+/* /HIDDEN HEADER */
